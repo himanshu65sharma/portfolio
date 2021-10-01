@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f7fb;
+}
+
+.header {
+  background-color:#2a3a8d ;
+  padding: 17%;
+  text-align: center;
+  color: white;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #2a3a8d;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 30px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 1s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+#navbar a.active {
+ 
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+  
+}
+#animat {
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 3px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 15s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+#info{
+  width: 90%;
+  height: 20%;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: inset;
+  margin: auto;
+ 
+}
+#intro{
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0;
+  width: 20%;
+  
+  height: 40%;
+  overflow: auto;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #2a3a8d;
+  color: white;
+}
+li {
+  
+  border-bottom: 1px solid #2a3a8d;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+li a:hover:not(.active) {
+  background-color: #2a3a8d;
+  color: white;
+}
+table{
+  margin-left: 35%;
+  
+}
+th{
+  font-weight: 100;
+}
+#contact{
+  text-align: center;
+}
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    display: none;
+  }
+  .header{
+    height: 750px;
+    padding: 105px;
+  }
+  ul{
+    width: 100%;
+  }
+  #hidaway{
+    margin-left:0px;
+    padding: 0px;
+  }
+  #acad{
+    margin-left:0px;
+    padding: 0px;
+  }
+  #skill{
+    margin-left:0%;
+  }
+  #cont{
+    margin-left:0%;
+  }
+  #b{
+    margin-left:0%;
+  }
+
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 >Hello,</h1>
+  <p style="font-size: 35px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Welcome To My Small World.</p>
+  <a href="#intro" style="color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"">Click Here Or Scroll Down To Enter Into It </a>
+  <br><a style="font-size: 50px;">&#8595</a>
+</div>
+
+
+<div id="navbar">
+    <a href="#default" id="logo">Himanshu Sharma</a>
+    <div id="navbar-right">
+      
+      <a href="#contact" style="color: #2a3a8d;">Contact</a>
+      <a class="active" href="#home" style="font: optional;">Home</a>
+      <a href="#about" style="color: #2a3a8d;">About</a>
+    </div>
+  </div>
+ </div>
+ 
+   <div id="info" >
+<div id="intro" style="margin-top:90px;padding:120px 0px 45px;font-size:25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;color: #2a3a8d;">Hi I Am A <BR><p id="animat" style="color: #2a3a8d; ">A Student Developer and <br>A Electrical And Electronic Engineering Student</p></div>
+  <hr>
+  <p id="more" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;color: #2a3a8d;"><u>Scroll Down To Know More </u></p>
+  <hr><br>
+  <ul>
+    <li >
+    <li><a href="javascript:;" onClick="document.getElementById('hideaway').style.display='block';document.getElementById('acad').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('skill').style.display='none';">Introduction</a></li>
+    <li><a href="javascript:;" onClick="document.getElementById('acad').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('skill').style.display='none';">Academic Details</a></li>
+    <li><a href="javascript:;" onClick="document.getElementById('skill').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('acad').style.display='none';">Skills</a></li>
+    <li><a href="javascript:;" onClick="document.getElementById('cont').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('acad').style.display='none';document.getElementById('skill').style.display='none';" style="border-bottom: 1px solid #2a3a8d;">Contact</a></li>
+  </li>
+  </ul>
+  <div id="hideaway" style="display:none;margin-top: -28%;margin-left:25%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><br><br><p id="b" style="margin-left: 35%;color: #2a3a8d;"><u>Introduction</u><br><br></p><img src="web-developer-programmer-flat-vector-250361941.jpg" width="150px" height="200px" style="margin-left: 35%;"><br><p id="a" style="text-align: center;">Hello, I am Himanshu Sharma.<br> I am from Satna(M.P).<br> I live in Bhopal (M.P.) for my Hiegher Studies.<br>My Hobbies inculdes Coding and listning Music.<br></p></div>
+
+  <div id="acad" style="display:none;margin-top: -28%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><br><br><p id="b" style="margin-left: 40%;color: #2a3a8d;"><u>Academic Details</u><br></p>
+    <br>
+  
+    <table style="width: 50%;">
+      <tr>
+        <th style="color: #2a3a8d;">Class :- 10th</th><br>
+       
+      </tr>
+      <tr>
+        <td><br></td>
+        
+      </tr>
+      <tr>
+        <td>School:- CKMS,Satna(M.P)</td>
+        
+      </tr>
+      <tr>
+        <td>Board:- ICSE</td>
+        
+      </tr>  <tr>
+        <td>Passing Year :- 2017</td>
+        
+      </tr>    
+      <table style="width: 50%;">
+        <tr>
+          <th style="color: #2a3a8d;"> Class :- 12th</th><br>
+         
+        </tr>
+        <tr>
+          <td><br></td>
+          
+        </tr>
+        <tr>
+          <td>School:- CKMS,Satna(M.P)</td>
+          
+        </tr>
+        <tr>
+          <td>Board:- ICSE</td>
+          
+        </tr>  <tr>
+          <td>Passing Year :- 2019</td>
+          
+        </tr>
+        </table>
+        <table style="width: 50%;">
+          <tr>
+            <th style="color: #2a3a8d;">B.Tech</th><br>
+           
+          </tr>
+          <tr>
+            <td><br></td>
+            
+          </tr>
+          <tr>
+            <td>College:- LNCT,Bhopal (M.P.)</td>
+            
+          </tr>
+          <tr>
+            <td>Stream :- Electrical and Electronics Engineering</td>
+            
+          </tr>
+          <tr>
+            <td>University:- RGPV University , Bhopal</td>
+            
+          </tr>  <tr>
+            <td>Passing Year :- 2013</td>
+            
+          </tr>
+          </table>
+  </p></p></div>
+ <div id="skill" style="display:none;margin-left:25%;margin-top: -28%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><br><br><p id="b" style="margin-left: 40%;color: #2a3a8d;"><u>Skills</u><br></p><br><p id="e" style="color: red;"><u>Status of my Skills Are :-</u></p>
+  <label for="file">* Electrical And Electronics Engineering:-</label><br>
+  <progress id="file" value="70" max="100"> 70% </progress><br>
+  <label for="file">* Html And Css:-</label><br>
+<progress id="file" value="90" max="100" > 90% </progress><br>
+<label for="file">* Javascript:-</label><br>
+<progress id="file" value="50" max="100"> 50% </progress><br>
+<label for="file">* Mysql and Web Development:-</label><br>
+<progress id="file" value="80" max="100"> 80% </progress><br>
+<label for="file">* Java:-</label><br>
+<progress id="file" value="85" max="100"> 85% </progress><br>
+<label for="file">* Core Python:-</label><br>
+<progress id="file" value="85" max="100"> 85% </progress><br>
+
+</div>
+<div id="cont" style="display:none;margin-left:25%;margin-top: -28%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><br><br><p id="b" style="margin-left: 40%;color: #2a3a8d;"><u>Contacts</u><br></p><br>
+  <br>
+  <div id="contact">
+   <p>* Phone NO :- 1234567890</p><br>
+   <p>* Email Id :- himanshu626sharma@gmail.com</p> <br>
+  <p>* Instagram<a href="https://www.instagram.com/himanshusharma.__/"><br><img src="d39a23d8f19c6cda9412ee93e7bddc66.jpg" width =" 80px" height="80px"></a></p>
+  <p>* Twitter<a href="https://twitter.com/Himansh51584505"><br><img src="twitter_logo_blue.png" width =" 80px" height="80px"></a></p>
+    <p>* Github<a href="https://github.com/himanshu65sharma"><br><img src="github-mark.png" width =" 150px" height="75px"></a></p>
+  </div>
+  </div>
+
+
+<br><br><br><br>
+<footer style="text-align: center;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #2a3a8d;">
+  <hr>
+  
+  Designed And Maintained By Himanshu Sharma <br><br><br>
+</footer></div>
+  
+  <script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.padding = "80px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }
+  }
+  </script>
+  
+
+</body>
+</html>
