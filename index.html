@@ -3,6 +3,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script src=
+"https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js">
+    </script>
+    
 <style>
 body {
   margin: 0;
@@ -152,7 +160,69 @@ th{
 #contact{
   text-align: center;
 }
+.nav-link {
+            color: black;
+        }
+  
+        .nav-item>a:hover {
+            color: black;
+        }
+  
+        /*code to change background color*/
+        .navbar-nav>.active>a {
+            background-color: #2a3a8d;
+            color: white;
+        }
+#hidaway{
+  display:box;
+  margin-left:25%;
+  padding:1px 16px;
+  height:1000px;
+}  
+#int{
+  margin-left: 50%;
+  color: #2a3a8d;
+}    
+
+#im{
+  margin-left: 50%;
+}
+#acad{
+  display:none;
+  margin-top: -28%;
+  padding:1px 16px;
+  height:1000px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#skill{
+  display:none;
+  margin-left:25%;
+  margin-top: -28%;
+  padding:1px 16px;
+  height:1000px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cont{
+  display:none;margin-left:25%;margin-top: -28%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#b{
+  margin-left: 35%;color: #2a3a8d;
+}
+#inta{
+  text-align: center;
+  margin-left: 23%;
+}
+#ac{
+margin-left: 40%;color: #2a3a8d;
+}
+#sk{
+  margin-left: 40%;color: #2a3a8d;
+}
+#con{
+  margin-left: 40%;color: #2a3a8d;
+}
 @media screen and (max-width: 580px) {
+
   #navbar {
     padding: 20px 10px !important;
   }
@@ -172,25 +242,68 @@ th{
   ul{
     width: 100%;
   }
-  #hidaway{
-    margin-left:0px;
-    padding: 0px;
-  }
-  #acad{
-    margin-left:0px;
-    padding: 0px;
-  }
-  #skill{
-    margin-left:0%;
-  }
-  #cont{
-    margin-left:0%;
-  }
-  #b{
-    margin-left:0%;
-  }
 
+  @font-face {
+  font-family: 'Gill-Sans';
+  src:url('Gill-Sans.woff') format('woff'),
+        url('Gill-Sans.woff2') format('woff2'),
+        url('Gill-Sans.eot'),
+        url('Gill-Sans.eot?#iefix') format('embedded-opentype'),
+        url('Gill-Sans.otf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+ }
+ #hideaway{
+   text-align: center;
+   margin-left:0%;
+   margin-right: 0%;
+   width: -500px;
+ }
+
+ #a{
+  text-align: center;
+   margin-left:0%;
+   margin-right: 0%;
+ }
+ #im{
+   margin-left: 0%;
+ }
+ #b{
+   margin-left: 0%;
+ }
+ #acad{
+   margin-left: -25%;
+   text-align: center;
+   height: 1300px;
+ }
+ #skill{
+   margin-left: 0%;
+   height: 800px;
+ }
+ #cont{
+   margin-left: 0%;
+ }
+ #e{
+   font-size: 23px;
+ }
+ #b{
+   text-align: center;
+ }
+ #ac{
+   text-align: center;
+   margin-left: 25%;
+ }
+ #sk{
+   text-align: center;
+   margin-left: 20%;
+ }
+ #con{
+   margin-left: 30%;
+ }
 }
+
 </style>
 </head>
 <body>
@@ -219,17 +332,29 @@ th{
   <hr>
   <p id="more" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;color: #2a3a8d;"><u>Scroll Down To Know More </u></p>
   <hr><br>
-  <ul>
+  <ul class="navbar-nav">
     <li >
-    <li><a href="javascript:;" onClick="document.getElementById('hideaway').style.display='block';document.getElementById('acad').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('skill').style.display='none';">Introduction</a></li>
-    <li><a href="javascript:;" onClick="document.getElementById('acad').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('skill').style.display='none';">Academic Details</a></li>
-    <li><a href="javascript:;" onClick="document.getElementById('skill').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('acad').style.display='none';">Skills</a></li>
-    <li><a href="javascript:;" onClick="document.getElementById('cont').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('acad').style.display='none';document.getElementById('skill').style.display='none';" style="border-bottom: 1px solid #2a3a8d;">Contact</a></li>
+    <li class="nav-item active"><a class="nav-link" href="javascript:;" onClick="document.getElementById('hideaway').style.display='block';document.getElementById('acad').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('skill').style.display='none';">Introduction</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:;" onClick="document.getElementById('acad').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('skill').style.display='none';">Academic Details</a></li>
+    <li class="nav-item"><a  class="nav-link" href="javascript:;" onClick="document.getElementById('skill').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('cont').style.display='none';document.getElementById('acad').style.display='none';">Skills</a></li>
+    <li class="nav-item"><a class="nav-link"  href="javascript:;" onClick="document.getElementById('cont').style.display='block';document.getElementById('hideaway').style.display='none';document.getElementById('acad').style.display='none';document.getElementById('skill').style.display='none';" style="border-bottom: 1px solid #2a3a8d;">Contact</a></li>
   </li>
   </ul>
-  <div id="hideaway" style="display:none;margin-top: -28%;margin-left:25%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><br><br><p id="b" style="margin-left: 35%;color: #2a3a8d;"><u>Introduction</u><br><br></p><img src="web-developer-programmer-flat-vector-250361941.jpg" width="150px" height="200px" style="margin-left: 35%;"><br><p id="a" style="text-align: center;">Hello, I am Himanshu Sharma.<br> I am from Satna(M.P).<br> I live in Bhopal (M.P.) for my Hiegher Studies.<br>My Hobbies inculdes Coding and listning Music.<br></p></div>
+  <div id="hideaway" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: -28%;">
+    <br>
+    <br>
+    <p id="int" >
+      <u>
+        Introduction
+      </u>
+      <br>
+      <br>
+    </p>
+    <img id="im"src="C:\Users\HP\Desktop\framework\web-developer-programmer-flat-vector-250361941.jpg" width="150px" height="200px" ><br><p id="inta" style="">Hello, I am Himanshu Sharma.<br> I am from Satna(M.P).<br> I live in Bhopal (M.P.) for my Hiegher Studies.<br>My Hobbies inculdes Coding and listning Music.
+      <br>
+    </p></div>
 
-  <div id="acad" style="display:none;margin-top: -28%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><br><br><p id="b" style="margin-left: 40%;color: #2a3a8d;"><u>Academic Details</u><br></p>
+  <div id="acad" style=""><br><br><p id="ac" style=""><u>Academic Details</u><br></p>
     <br>
   
     <table style="width: 50%;">
@@ -299,7 +424,7 @@ th{
           </tr>
           </table>
   </p></p></div>
- <div id="skill" style="display:none;margin-left:25%;margin-top: -28%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><br><br><p id="b" style="margin-left: 40%;color: #2a3a8d;"><u>Skills</u><br></p><br><p id="e" style="color: red;"><u>Status of my Skills Are :-</u></p>
+ <div id="skill" style=""><br><br><p id="sk" style=""><u>Skills</u><br></p><br><p id="e" style="color: red;"><u>Status of my Skills Are :-</u></p>
   <label for="file">* Electrical And Electronics Engineering:-</label><br>
   <progress id="file" value="70" max="100"> 70% </progress><br>
   <label for="file">* Html And Css:-</label><br>
@@ -314,14 +439,14 @@ th{
 <progress id="file" value="85" max="100"> 85% </progress><br>
 
 </div>
-<div id="cont" style="display:none;margin-left:25%;margin-top: -28%;padding:1px 16px;height:1000px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><br><br><p id="b" style="margin-left: 40%;color: #2a3a8d;"><u>Contacts</u><br></p><br>
+<div id="cont" style=""><br><br><p id="con" style=""><u>Contacts</u><br></p><br>
   <br>
   <div id="contact">
    <p>* Phone NO :- 1234567890</p><br>
-   <p>* Email Id :- himanshu626sharma@gmail.com</p> <br>
-  <p>* Instagram<a href="https://www.instagram.com/himanshusharma.__/"><br><img src="d39a23d8f19c6cda9412ee93e7bddc66.jpg" width =" 80px" height="80px"></a></p>
-  <p>* Twitter<a href="https://twitter.com/Himansh51584505"><br><img src="twitter_logo_blue.png" width =" 80px" height="80px"></a></p>
-    <p>* Github<a href="https://github.com/himanshu65sharma"><br><img src="github-mark.png" width =" 150px" height="75px"></a></p>
+   <p >* Email Id :- <p id="e">himanshu626sharma@gmail.com</p></p> <br>
+  <p>* Instagram<a href="https://www.instagram.com/himanshusharma.__/"><br><img src="C:\Users\HP\Desktop\framework\d39a23d8f19c6cda9412ee93e7bddc66.jpg" width =" 80px" height="80px"></a></p>
+  <p>* Twitter<a href="https://twitter.com/Himansh51584505"><br><img src="C:\Users\HP\Desktop\framework\twitter_logo_blue.png" width =" 80px" height="80px"></a></p>
+    <p>* Github<a href="https://github.com/himanshu65sharma"><br><img src="C:\Users\HP\Desktop\framework\github-mark.png" width =" 150px" height="75px"></a></p>
   </div>
   </div>
 
@@ -346,6 +471,15 @@ th{
       document.getElementById("logo").style.fontSize = "35px";
     }
   }
+  $(document).ready(function () {
+  
+  $('ul.navbar-nav > li')
+          .click(function (e) {
+      $('ul.navbar-nav > li')
+          .removeClass('active');
+      $(this).addClass('active');
+  });
+});
   </script>
   
 
